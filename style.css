@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E3E3E3;
+  font-family: 'Merriweather', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #D2691E;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/*** CLASSES ***/
+.btn {
+  color: #fff;
+  background-color: #D2691E;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0;
+  font-size: 16px;
+  padding: 5px 12px;
+}
+
+.dollar-sign {
+  width: 450px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #D2691E;
+  font-size: 16px;
+  background: transparent;
+  background-position: right 10px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ic_arrow_drop_down_circle_48px.svg/1024px-Ic_arrow_drop_down_circle_48px.svg.png');
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: #D2691E;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
